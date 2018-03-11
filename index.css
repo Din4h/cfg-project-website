@@ -9,7 +9,9 @@ img {
   height: 200px;
   border-radius: 20px;
 }
-
+a {
+  color: #F274AF
+}
 ul {
   padding: 10px;
   background: white;
