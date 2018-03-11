@@ -16,6 +16,7 @@ ul {
   padding: 10px;
   background: white;
   color: black;
+  border: 10px #000000;
 }
 
 li{
