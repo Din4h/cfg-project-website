@@ -4,6 +4,11 @@ header {
   color: white;
 }
 
+.navbar {
+  overflow: hidden;
+  background-color: #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
+}
 img {
   width: 200px;
   height: 200px;
