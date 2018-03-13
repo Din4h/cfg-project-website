@@ -38,8 +38,7 @@ img {
   font-family: inherit;
   margin: 0;
 }
-.navbar a: hover
- .dropbtn a: hover {
+.navbar a: hover .dropbtn a: hover {
   background-color: #EB7EBB
 }
 .dropdown-content {
