@@ -11,7 +11,8 @@
 
 <body>
   <header>
-  <center><img src="DINAH TAY LOGO .jpg" alt="Dinah Tay"></center>
+  <center><img src="Images/DINAH TAY LOGO .jpg" alt="Dinah Tay"></center>
+<div id="navbar">
   <nav class="navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -55,26 +56,18 @@
             <li><a href="#">Hair Accessories</a></li>
             <li><a href="#">Belts</a></li>
             <li><a href="#">Sunglasses</a></li>
-        </li>
-         <div class="col-sm-5">
+          </li>
         <h5>Bags</h5>
-        <ul>
           <li><a href="#">Handbags</a></li>
           <li><a href="#">Backpacks</a></li>
           <li><a href="#">Satchels</a></li>
           <li><a href="#">Clutch Bags</a></li>
           <li><a href="#">Purses</a></li>
-        </ul>
-    </div>
-      <div class="col-sm-5">
         <h5>Jewellery</h5>
-        <ul>
          <li><a href="#">Earrings</a></li>
          <li><a href="#">Necklaces</a></li>
          <li><a href="#">Bracelets</a></li>
          <li><a href="#">Watches</a></li>
-       </ul>
-     </div>
 </ul>
       <li><a href="#sale">SALE</a></li>
       <li class="dropdown">
@@ -88,7 +81,9 @@
       <li><a href="#instashop">INSTASHOP </a></li>
     </ul>
   </div>
+  </div>
 </nav>
+</div>
 </header>
 
 <div class="container">
@@ -101,30 +96,28 @@
 
   <div class="carousel-inner">
     <div class="item active">
-      /*place image here*/
+      <img src="Images/20180214_150447.jpg" alt="Dinah Tay shop" style="width:100%">
       <div class="carousel-caption">
-        <h3>Welcome to Dinah Tay</h3>
+        <h2>Welcome to Dinah Tay</h2>
         <p>Shop now</p>
       </div>
     </div>
 
     <div class="item">
-      /*place image here*/
+      <img src="Images/20180316_180614.jpg" alt="Spring" style="width:100%">
     <div class="carousel-caption">
-      <h3>Spring is here!</h3>
-      <p>We love spring!</p>
+      <h2>It's A Spring Thing</h2>
     </div>
   </div>
 
   <div class="item">
-       /*place image here*/
+      <img src="Images/20180315_151723.jpg" alt="model-1" style="width:100%" class="rotate90">
      <div class="carousel-caption">
-       <h3>Chic! Chic! Chic!</h3>
+       <h2>Chic! Chic! Chic!</h2>
        <p>Be Chic</p>
      </div>
    </div>
  </div>
-
  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left"></span>
     <span class="sr-only">Previous</span>
@@ -136,4 +129,18 @@
 </div>
 
 </div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 </body>
