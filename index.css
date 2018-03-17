@@ -1,11 +1,34 @@
+body {
+	margin: 0;
+	padding: 0;
+}
 #navbar {
-  overflow: hidden;
+  position: sticky;
+  z-index: 10;
+}
+.header {
+  padding: 40px 0;
+  background-color: white;
+}
+.navbar-default {
   background-color: #FFFFFF;
+  position: relative;
+}
+.container {
+	width: 100%;
+	margin: 10px auto 100px;
 }
 .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+  }
+}
+.sticky + .container {
+  padding-top: 100px;
 }
 .rotate90 {
   transform: rotate(90deg);
@@ -14,4 +37,17 @@ img {
   width: 200px;
   height: 200px;
   border-radius: 20px;
+}
+.jumbotron {
+  background-color: pink;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 600px;
+  padding: 0;
+  margin: 0;
+}
+#myCarousel {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
 }
