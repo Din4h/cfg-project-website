@@ -7,7 +7,7 @@ body {
   z-index: 10;
 }
 .header {
-  padding: 40px 0;
+  padding: 10px 0;
   background-color: white;
 }
 .navbar-default {
@@ -38,16 +38,24 @@ img {
   height: 200px;
   border-radius: 20px;
 }
-.jumbotron {
-  background-color: pink;
-  background-size: cover;
-  background-attachment: fixed;
-  min-height: 600px;
-  padding: 0;
-  margin: 0;
-}
 #myCarousel {
     width: 100%;
     position: relative;
     overflow: hidden;
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+		      display: block;
+	        object-fit: cover;
+	        max-width: none;
+	        line-height: 1;
+	        margin:auto;
+	        min-width: 100%;
+					position: relative;
+          top: 0;
+}
+.carousel-caption {
+	font-family: sans-serif;
+	font: arial;
+	font-size: 50px;
+	color: pink;
 }
