@@ -1,2 +1,61 @@
-h1 {
+body {
+	margin: 0;
+	padding: 0;
+}
+#navbar {
+  position: sticky;
+  z-index: 10;
+}
+.header {
+  padding: 10px 0;
+  background-color: white;
+}
+.navbar-default {
+  background-color: #FFFFFF;
+  position: relative;
+}
+.container {
+	width: 100%;
+	margin: 10px auto 100px;
+}
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+  }
+}
+.sticky + .container {
+  padding-top: 100px;
+}
+.rotate90 {
+  transform: rotate(90deg);
+}
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+}
+#myCarousel {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+		      display: block;
+	        object-fit: cover;
+	        max-width: none;
+	        line-height: 1;
+	        margin:auto;
+	        min-width: 100%;
+					position: relative;
+          top: 0;
+}
+.carousel-caption {
+	font-family: sans-serif;
+	font: arial;
+	font-size: 50px;
+	color: pink;
 }
